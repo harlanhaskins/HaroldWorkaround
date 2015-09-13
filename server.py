@@ -78,6 +78,6 @@ if __name__ == '__main__':
             app.run(debug=True, host='0.0.0.0', port=n)
             break
         except (IOError, OSError):
-            print('Port %d unavailable. Trying %d.' % n, n+1)
+            print('Port %d unavailable. Trying %d.' % (n, n+1))
         except KeyboardInterrupt:
             break
