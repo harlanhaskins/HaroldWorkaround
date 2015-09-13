@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (2.0.0)
+  - BRYXBanner (0.2.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - BRYXBanner (from `git@github.com:bryx-inc/BRYXBanner.git`, branch `swift-2`)
+
+EXTERNAL SOURCES:
+  BRYXBanner:
+    :branch: swift-2
+    :git: git@github.com:bryx-inc/BRYXBanner.git
+
+CHECKOUT OPTIONS:
+  BRYXBanner:
+    :commit: 40e86ad750fc89070b56c439ab84b0eb70954313
+    :git: git@github.com:bryx-inc/BRYXBanner.git
+
+SPEC CHECKSUMS:
+  Alamofire: 2f13548b29d25a58ecd91c9225fb51493e2b782b
+  BRYXBanner: 1d2f3bf8fd9244b4edab30be944f0de00a2e5a87
+
+COCOAPODS: 0.38.2

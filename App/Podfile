@@ -1,0 +1,5 @@
+use_frameworks!
+platform :ios, '9.0'
+
+pod 'Alamofire'
+pod 'BRYXBanner', :branch => 'swift-2', :git => 'git@github.com:bryx-inc/BRYXBanner.git'

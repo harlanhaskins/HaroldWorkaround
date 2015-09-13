@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36BA346E1554C625DC55E4AC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A115946ABE34476D7FEE4BB2 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DC57E47C1BA223ED0090FDCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57E47B1BA223ED0090FDCD /* AppDelegate.swift */; };
+		DC57E47E1BA223ED0090FDCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57E47D1BA223ED0090FDCD /* ViewController.swift */; };
+		DC57E4831BA223ED0090FDCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC57E4821BA223ED0090FDCD /* Assets.xcassets */; };
+		DC57E4911BA223ED0090FDCD /* HaroldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57E4901BA223ED0090FDCD /* HaroldTests.swift */; };
+		DC57E49C1BA223ED0090FDCD /* HaroldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57E49B1BA223ED0090FDCD /* HaroldUITests.swift */; };
+		DC654A191BA52F88005D267A /* HaroldAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC654A181BA52F88005D267A /* HaroldAPI.swift */; };
+		DC654A1B1BA53749005D267A /* HaroldNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC654A1A1BA53749005D267A /* HaroldNavigationController.swift */; };
+		DC6CD1481BA5F73100A21990 /* ConfigureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CD1471BA5F73100A21990 /* ConfigureViewController.swift */; };
+		DC6CD14A1BA5FEB400A21990 /* Pallette.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CD1491BA5FEB400A21990 /* Pallette.swift */; };
+		DCAB5EAF1BA544AE009A072D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAB5EAE1BA544AE009A072D /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC57E48D1BA223ED0090FDCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC57E4701BA223ED0090FDCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC57E4771BA223ED0090FDCD;
+			remoteInfo = Harold;
+		};
+		DC57E4981BA223ED0090FDCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC57E4701BA223ED0090FDCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC57E4771BA223ED0090FDCD;
+			remoteInfo = Harold;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		91DB920ABE5B627AAF00A908 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A115946ABE34476D7FEE4BB2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D86D162AB2972678B0A50F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		DC57E4781BA223ED0090FDCD /* Harold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harold.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC57E47B1BA223ED0090FDCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC57E47D1BA223ED0090FDCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC57E4821BA223ED0090FDCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC57E4871BA223ED0090FDCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC57E48C1BA223ED0090FDCD /* HaroldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaroldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC57E4901BA223ED0090FDCD /* HaroldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaroldTests.swift; sourceTree = "<group>"; };
+		DC57E4921BA223ED0090FDCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC57E4971BA223ED0090FDCD /* HaroldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaroldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC57E49B1BA223ED0090FDCD /* HaroldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaroldUITests.swift; sourceTree = "<group>"; };
+		DC57E49D1BA223ED0090FDCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC654A181BA52F88005D267A /* HaroldAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaroldAPI.swift; sourceTree = "<group>"; };
+		DC654A1A1BA53749005D267A /* HaroldNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaroldNavigationController.swift; sourceTree = "<group>"; };
+		DC6CD1471BA5F73100A21990 /* ConfigureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureViewController.swift; sourceTree = "<group>"; };
+		DC6CD1491BA5FEB400A21990 /* Pallette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pallette.swift; sourceTree = "<group>"; };
+		DCAB5EAE1BA544AE009A072D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC57E4751BA223ED0090FDCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36BA346E1554C625DC55E4AC /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC57E4891BA223ED0090FDCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC57E4941BA223ED0090FDCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47C50326B09A1E2A989013FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1D86D162AB2972678B0A50F /* Pods.debug.xcconfig */,
+				91DB920ABE5B627AAF00A908 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CCA648D041D6C69200B70D2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A115946ABE34476D7FEE4BB2 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC57E46F1BA223ED0090FDCD = {
+			isa = PBXGroup;
+			children = (
+				DC57E47A1BA223ED0090FDCD /* Harold */,
+				DC57E48F1BA223ED0090FDCD /* HaroldTests */,
+				DC57E49A1BA223ED0090FDCD /* HaroldUITests */,
+				DC57E4791BA223ED0090FDCD /* Products */,
+				47C50326B09A1E2A989013FF /* Pods */,
+				CCA648D041D6C69200B70D2C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC57E4791BA223ED0090FDCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC57E4781BA223ED0090FDCD /* Harold.app */,
+				DC57E48C1BA223ED0090FDCD /* HaroldTests.xctest */,
+				DC57E4971BA223ED0090FDCD /* HaroldUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC57E47A1BA223ED0090FDCD /* Harold */ = {
+			isa = PBXGroup;
+			children = (
+				DCAB5EAE1BA544AE009A072D /* Main.storyboard */,
+				DC6CD1471BA5F73100A21990 /* ConfigureViewController.swift */,
+				DC57E47B1BA223ED0090FDCD /* AppDelegate.swift */,
+				DC654A1A1BA53749005D267A /* HaroldNavigationController.swift */,
+				DC57E47D1BA223ED0090FDCD /* ViewController.swift */,
+				DC654A181BA52F88005D267A /* HaroldAPI.swift */,
+				DC6CD1491BA5FEB400A21990 /* Pallette.swift */,
+				DC57E4821BA223ED0090FDCD /* Assets.xcassets */,
+				DC57E4871BA223ED0090FDCD /* Info.plist */,
+			);
+			path = Harold;
+			sourceTree = "<group>";
+		};
+		DC57E48F1BA223ED0090FDCD /* HaroldTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC57E4901BA223ED0090FDCD /* HaroldTests.swift */,
+				DC57E4921BA223ED0090FDCD /* Info.plist */,
+			);
+			path = HaroldTests;
+			sourceTree = "<group>";
+		};
+		DC57E49A1BA223ED0090FDCD /* HaroldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC57E49B1BA223ED0090FDCD /* HaroldUITests.swift */,
+				DC57E49D1BA223ED0090FDCD /* Info.plist */,
+			);
+			path = HaroldUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC57E4771BA223ED0090FDCD /* Harold */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC57E4A01BA223ED0090FDCD /* Build configuration list for PBXNativeTarget "Harold" */;
+			buildPhases = (
+				9B7C2595D2B92F255BACDA39 /* Check Pods Manifest.lock */,
+				DC57E4741BA223ED0090FDCD /* Sources */,
+				DC57E4751BA223ED0090FDCD /* Frameworks */,
+				DC57E4761BA223ED0090FDCD /* Resources */,
+				C6D8C99EEAAB23820DA02860 /* Embed Pods Frameworks */,
+				68EE2302714593802C5B0845 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Harold;
+			productName = Harold;
+			productReference = DC57E4781BA223ED0090FDCD /* Harold.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC57E48B1BA223ED0090FDCD /* HaroldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC57E4A31BA223ED0090FDCD /* Build configuration list for PBXNativeTarget "HaroldTests" */;
+			buildPhases = (
+				DC57E4881BA223ED0090FDCD /* Sources */,
+				DC57E4891BA223ED0090FDCD /* Frameworks */,
+				DC57E48A1BA223ED0090FDCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC57E48E1BA223ED0090FDCD /* PBXTargetDependency */,
+			);
+			name = HaroldTests;
+			productName = HaroldTests;
+			productReference = DC57E48C1BA223ED0090FDCD /* HaroldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC57E4961BA223ED0090FDCD /* HaroldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC57E4A61BA223ED0090FDCD /* Build configuration list for PBXNativeTarget "HaroldUITests" */;
+			buildPhases = (
+				DC57E4931BA223ED0090FDCD /* Sources */,
+				DC57E4941BA223ED0090FDCD /* Frameworks */,
+				DC57E4951BA223ED0090FDCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC57E4991BA223ED0090FDCD /* PBXTargetDependency */,
+			);
+			name = HaroldUITests;
+			productName = HaroldUITests;
+			productReference = DC57E4971BA223ED0090FDCD /* HaroldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC57E4701BA223ED0090FDCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Harlan Haskins";
+				TargetAttributes = {
+					DC57E4771BA223ED0090FDCD = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					DC57E48B1BA223ED0090FDCD = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = DC57E4771BA223ED0090FDCD;
+					};
+					DC57E4961BA223ED0090FDCD = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = DC57E4771BA223ED0090FDCD;
+					};
+				};
+			};
+			buildConfigurationList = DC57E4731BA223ED0090FDCD /* Build configuration list for PBXProject "Harold" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC57E46F1BA223ED0090FDCD;
+			productRefGroup = DC57E4791BA223ED0090FDCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC57E4771BA223ED0090FDCD /* Harold */,
+				DC57E48B1BA223ED0090FDCD /* HaroldTests */,
+				DC57E4961BA223ED0090FDCD /* HaroldUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC57E4761BA223ED0090FDCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC57E4831BA223ED0090FDCD /* Assets.xcassets in Resources */,
+				DCAB5EAF1BA544AE009A072D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC57E48A1BA223ED0090FDCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC57E4951BA223ED0090FDCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68EE2302714593802C5B0845 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B7C2595D2B92F255BACDA39 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6D8C99EEAAB23820DA02860 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC57E4741BA223ED0090FDCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6CD14A1BA5FEB400A21990 /* Pallette.swift in Sources */,
+				DC57E47E1BA223ED0090FDCD /* ViewController.swift in Sources */,
+				DC6CD1481BA5F73100A21990 /* ConfigureViewController.swift in Sources */,
+				DC57E47C1BA223ED0090FDCD /* AppDelegate.swift in Sources */,
+				DC654A1B1BA53749005D267A /* HaroldNavigationController.swift in Sources */,
+				DC654A191BA52F88005D267A /* HaroldAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC57E4881BA223ED0090FDCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC57E4911BA223ED0090FDCD /* HaroldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC57E4931BA223ED0090FDCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC57E49C1BA223ED0090FDCD /* HaroldUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC57E48E1BA223ED0090FDCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC57E4771BA223ED0090FDCD /* Harold */;
+			targetProxy = DC57E48D1BA223ED0090FDCD /* PBXContainerItemProxy */;
+		};
+		DC57E4991BA223ED0090FDCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC57E4771BA223ED0090FDCD /* Harold */;
+			targetProxy = DC57E4981BA223ED0090FDCD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DC57E49E1BA223ED0090FDCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC57E49F1BA223ED0090FDCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC57E4A11BA223ED0090FDCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1D86D162AB2972678B0A50F /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Harold/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harlan.Harold;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC57E4A21BA223ED0090FDCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91DB920ABE5B627AAF00A908 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Harold/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harlan.Harold;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DC57E4A41BA223ED0090FDCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HaroldTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harlan.HaroldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Harold.app/Harold";
+			};
+			name = Debug;
+		};
+		DC57E4A51BA223ED0090FDCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HaroldTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harlan.HaroldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Harold.app/Harold";
+			};
+			name = Release;
+		};
+		DC57E4A71BA223ED0090FDCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HaroldUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harlan.HaroldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Harold;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DC57E4A81BA223ED0090FDCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HaroldUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harlan.HaroldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Harold;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC57E4731BA223ED0090FDCD /* Build configuration list for PBXProject "Harold" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC57E49E1BA223ED0090FDCD /* Debug */,
+				DC57E49F1BA223ED0090FDCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC57E4A01BA223ED0090FDCD /* Build configuration list for PBXNativeTarget "Harold" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC57E4A11BA223ED0090FDCD /* Debug */,
+				DC57E4A21BA223ED0090FDCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC57E4A31BA223ED0090FDCD /* Build configuration list for PBXNativeTarget "HaroldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC57E4A41BA223ED0090FDCD /* Debug */,
+				DC57E4A51BA223ED0090FDCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC57E4A61BA223ED0090FDCD /* Build configuration list for PBXNativeTarget "HaroldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC57E4A71BA223ED0090FDCD /* Debug */,
+				DC57E4A81BA223ED0090FDCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC57E4701BA223ED0090FDCD /* Project object */;
+}

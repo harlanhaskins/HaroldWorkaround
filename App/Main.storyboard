@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NFn-06-1hE">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <scenes>
+        <!--Harold-->
+        <scene sceneID="WWo-cG-Atd">
+            <objects>
+                <tableViewController id="ep9-md-VPU" customClass="ViewController" customModule="Harold" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iVw-9e-wR4">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FileCell" textLabel="lMQ-3U-cjk" style="IBUITableViewCellStyleDefault" id="J6J-t4-Z5C">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J6J-t4-Z5C" id="9Bj-q2-gBc">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lMQ-3U-cjk">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ep9-md-VPU" id="Ue6-NL-HD0"/>
+                            <outlet property="delegate" destination="ep9-md-VPU" id="Nmz-aQ-hT7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Harold" id="0jk-rr-hL1">
+                        <barButtonItem key="leftBarButtonItem" title="Configure" id="wfu-MA-rRT">
+                            <connections>
+                                <segue destination="gyy-YB-7Le" kind="popoverPresentation" identifier="ShowConfigure" popoverAnchorBarButtonItem="wfu-MA-rRT" id="xZm-La-oyX">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DbB-Jh-LbW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678" y="667"/>
+        </scene>
+        <!--Configure-->
+        <scene sceneID="FD2-b0-sr3">
+            <objects>
+                <viewController id="q40-cb-kgH" customClass="ConfigureViewController" customModule="Harold" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DEQ-qw-jDa"/>
+                        <viewControllerLayoutGuide type="bottom" id="vbB-0I-4X0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wke-Tn-EZz">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="I9y-2N-nZc">
+                                <rect key="frame" x="181" y="25" width="239" height="64"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="aS3-Nw-MIU">
+                                        <rect key="frame" x="0.0" y="0.0" width="239" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Port" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATn-me-P2d">
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5G0-VU-MHq">
+                                                <rect key="frame" x="89" y="0.0" width="150" height="30"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="Jn2-dJ-U0b"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="didChangeText:" destination="q40-cb-kgH" eventType="editingChanged" id="1Ly-Hs-uWw"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0cd-dL-kYX">
+                                        <rect key="frame" x="0.0" y="34" width="239" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkk-Br-eXc">
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n9e-aK-djp">
+                                                <rect key="frame" x="89" y="0.0" width="150" height="30"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="Yvi-ld-Xqf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <action selector="didChangeText:" destination="q40-cb-kgH" eventType="editingChanged" id="Le6-PV-twe"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I9y-2N-nZc" firstAttribute="top" secondItem="DEQ-qw-jDa" secondAttribute="bottom" constant="25" id="0Iv-y4-bxO"/>
+                            <constraint firstItem="I9y-2N-nZc" firstAttribute="centerX" secondItem="wke-Tn-EZz" secondAttribute="centerX" id="gab-AQ-bDh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Configure" id="izj-aY-8Hu">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="k4l-5G-ErI">
+                            <connections>
+                                <action selector="didTapDone:" destination="q40-cb-kgH" id="1fc-7T-ruS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="doneButton" destination="k4l-5G-ErI" id="E2D-5E-Dcc"/>
+                        <outlet property="passwordField" destination="n9e-aK-djp" id="AZk-IB-GoS"/>
+                        <outlet property="usernameField" destination="5G0-VU-MHq" id="OSF-6b-eoO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ng4-kN-sba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308" y="1321"/>
+        </scene>
+        <!--Harold Navigation Controller-->
+        <scene sceneID="dc2-3c-rjr">
+            <objects>
+                <navigationController id="gyy-YB-7Le" customClass="HaroldNavigationController" customModule="Harold" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="J6Y-Qc-2an">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="tintColor" white="0.98999999999999999" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.90196078430000004" green="0.14117647059999999" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.98999999999999999" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="q40-cb-kgH" kind="relationship" relationship="rootViewController" id="lWo-96-axi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p69-En-Ps6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678" y="1321"/>
+        </scene>
+        <!--Harold Navigation Controller-->
+        <scene sceneID="aXD-T1-rWs">
+            <objects>
+                <navigationController id="NFn-06-1hE" customClass="HaroldNavigationController" customModule="Harold" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="LzP-lr-xzW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="tintColor" white="0.98999999999999999" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.90196078430000004" green="0.14117647059999999" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.98999999999999999" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ep9-md-VPU" kind="relationship" relationship="rootViewController" id="A3W-0r-18e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QIj-hI-UrN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-142" y="667"/>
+        </scene>
+    </scenes>
+</document>
