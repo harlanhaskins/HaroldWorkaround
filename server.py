@@ -78,7 +78,7 @@ if __name__ == '__main__':
         try:
             app.run(debug=True, host='0.0.0.0', port=n)
             break
-        except PermissionError:
+        except (IOError, OSError):
             print('Port %d unavailable. Trying %d.' % n, n+1)
         except KeyboardInterrupt:
             break
